@@ -9,8 +9,8 @@ from google.genai import types
 load_dotenv()
 
 api_key = os.getenv("GEMINI_API_KEY")
-primary_model = os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
-fallback_model = os.getenv("GEMINI_FALLBACK_MODEL", "gemini-2.5-flash-lite")
+primary_model = os.getenv("GEMINI_MODEL", "gemini-3.6-flash")
+fallback_model = os.getenv("GEMINI_FALLBACK_MODEL", "gemini-3.6-flash-lite")
 
 client = genai.Client(
     api_key=api_key,
